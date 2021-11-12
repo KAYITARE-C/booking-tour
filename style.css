@@ -1,0 +1,305 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-size:16px;
+    color:#ffffff;
+    font-family: 'Lato', sans-serif;
+    background-image:url("https://images.pexels.com/photos/2161467/pexels-photo-2161467.jpeg?");
+    background-repeat: no-repeat; 
+    background-position:center center fixed; 
+    -webkit-background-size:cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover;
+     background-size: cover; 
+     width:100%;
+     background-attachment: fixed;
+
+
+}
+/* start navbar css style */
+nav{
+    background:rgb(49, 3, 3);
+    width:100%;
+    padding:10px;  
+    border-bottom:1px solid green; 
+    display:flex;
+    position:fixed;
+    z-index: 999;
+   
+  
+    
+    
+}
+nav .logo{
+    width:200px;
+    height:70px;
+    margin:0 10px 0 50px; 
+}
+.logo-img{
+    width:100%;
+    height:100%;
+    background:url("/logo.png")no-repeat bottom;
+}
+.nav-link{
+    width:100%;
+    
+}
+nav a.active {
+    background-color: #04AA6D;
+    color: white;
+   
+  }
+ul{
+    overflow: hidden;
+    list-style-type: none;
+    float:right;
+   
+}
+li{
+    float:right; 
+}
+li a{
+    text-decoration:none;
+    color:whitesmoke;
+    text-align:center;
+    padding:20px 16px; 
+    font-size:18px; 
+   display:flex;
+   
+         
+}
+li a:hover{
+    background:rgb(131, 97, 97);
+    color:rgb(49, 3, 3);  
+}
+/* start of home container */
+.home-container{
+    background:rgba(0, 0, 0, 0.8);
+    width:100%;
+    height:100vh;
+    position:relative;
+    
+}
+.home-container h1{
+    position: absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    letter-spacing: 4px;
+    animation-duration: 3s;
+    animation-name:leftAnimation;
+}
+/* home h1 animation */
+@keyframes leftAnimation {
+    0%{
+        opacity:0;
+        transform: translateX(-100px);
+    }
+    5%{
+        transform: translateY(20px);
+    }
+    100%{
+        opacity:1;
+        transform: translate(0);
+    }
+    
+}
+/* card sstyle */
+.card{
+    width:40%;
+    border:1px solid rgb(49, 3, 3);
+    background:rgba(65, 29, 29, 0.8);
+    position:absolute;
+    top:45%;
+    text-align:center;
+    box-shadow:1px 1px 1px 2px grey;
+    right:2%;
+    padding:30px;
+    border-radius: 5px;
+    animation-duration: 3s;
+    animation-name:leftAnimation;
+
+}
+.card p, .cardz p{
+    font-family: italic;
+    font-size:18px;
+    margin-bottom: 15px;
+}
+button{
+    width: 40%;
+    padding:15px;
+    font-size:18px;
+    position:absolute;
+    left:33%;
+    border-radius:10px;
+    box-shadow: 1px 1px 1px 2px gray;
+
+}
+button a{
+    color:rgb(49, 3, 3);
+    font-weight:bold;
+    text-decoration: none;
+}
+button:hover, button:hover > a{
+    background:rgb(49, 3, 3);
+    color:white;
+}
+.left-section button{
+    width:20%;
+}
+.tour-section-container{
+    width:100%;
+    height:100vh;
+    background:white;   
+    position:relative;
+   
+}
+.tour-section-container .line-section{
+    width:100%;
+    height:10%;
+    display:flex;
+    padding:10px;
+    
+    
+  
+}
+.line-section .line-one{
+    background:rgb(49, 3, 3);
+    width:20%;
+    height:10%;
+    margin-left:25%;
+    margin-right:5px;
+    border-radius:5px;
+}
+.line-section .line-two{
+    background:rgb(49, 3, 3);
+    width:10%;
+    height:10%;
+    margin-right:5px;
+    border-radius:5px;
+}
+.line-section .line-three{
+    background:rgb(49, 3, 3);
+    width:20%;
+    height:10%;
+    border-radius:5px;
+   
+}
+.tour-section-container .main-section{
+    width:100%;
+    color:black;
+    display:flex;
+
+}
+.main-section .left-section{
+    margin-left:63px;
+    width:40%;   
+    padding:10px;
+}
+
+.left-section h1, .tour-section-container h1{
+    color:rgb(49, 3, 3);
+    padding-bottom: 30px;
+}
+.left-section label{
+  font-size:18px;
+  font-weight:bold;
+  color:black;
+  
+}
+.left-section select{
+  width:70%;
+  height:40px;
+  /* border:2px solid black; */
+  font-size:18px;
+ 
+  background-color: white;
+  border-radius:3px;
+  box-shadow: 1px 1px 1px 2px whitesmoke;
+
+}
+.card label{
+  font-size:16px;
+  width:100px;
+  display:inline-block;
+
+
+}
+.main-section .right-section{
+    width:60%; 
+
+    
+}
+.right-section img{
+    width:80%;
+}
+.left-section .garelly-card{
+    width: 100%;
+    height:70vh;
+    background: #FFFFFF;
+    border: 1px solid #541717;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 3px 4px rgba(0, 0, 0, 0.25);
+    display:flex;
+    padding:8px;
+
+}
+.garelly-card .left{
+    width:50%;
+    height: 50%;
+
+}
+.garelly-card .right{
+    width:50%;
+    height:50%;
+
+}
+.left img, .right img{
+    height:100%;
+    width:100%;
+    padding:8px;
+    
+   
+}
+
+.right-section .tourLink{
+    display:flex;
+    display: relative;
+   
+}
+.tourLink a{
+    padding:16px 2px;
+    font-size:18px;
+    margin:4px;
+    display: absolute;
+   
+    text-decoration:none;
+    color:rgb(83, 80, 80);
+}
+ .main-section .right-section .cardTour{
+    width:90%;
+    height: 20%;
+    background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+margin-top:18px;
+border-top:1px solid #541717;
+padding:10px;
+display: flex;
+}  
+.cardTour img{
+    height:100%;
+    width:30%;
+}
+.cardTour p{
+    text-align: center;
+}
+.cardTour p a{
+    text-decoration:none;
+    color:maroon;
+    float:right;
+    font-weight:bold;
+    font-size:18px;
+}
